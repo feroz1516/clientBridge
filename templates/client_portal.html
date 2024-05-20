@@ -1,0 +1,102 @@
+{% extends 'base.html' %} {% block head %} {{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/client_portal.css') }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+{% endblock %}
+
+
+{% block content %}
+<div class="navbar">
+    <h1 class="navbar-title">Client Bridge</h1>
+</div>
+
+<div class="client_section">
+    <div class="client_profile_box">
+            <div class="profile_img">
+                <img src="../static/images/profie_img.png" alt="">
+            </div>
+            <div class="profile_name">
+                <span class="profile_name_text">@Mohammed Feroz</span>
+            </div>
+            <div class="client_contacts">
+                <div class="client_id">
+                    <p>Client ID: 123456</p>
+                </div>
+                <div class="email_id">
+                    <p>feroz1522krish@gmail.com</p>
+
+                </div>
+            </div>
+    </div>
+    <div class="client_project_details">
+        <div class="client_project_info">
+                <div class="project_title">
+                    <img src="../static/images/project.png" alt="">
+                    <div class="column_align">
+                        <span class="projectHeader">
+                                Project Title:
+                        </span>
+                        <span class="projectText">
+                                Sample Project
+                        </span>
+                    </div>
+
+                </div>
+                <div class="project_schedule">
+                    <img src="../static/images/calendar.png" alt="">
+                    <div class="column_align">
+                        <span class="projectHeader">
+                            Schedule:
+                        </span>
+                        <span class="projectText">
+                            24th March 2024 - 8th July 2024
+                        </span>
+                    </div>
+                </div>
+                <div class="project_budget">
+                    <img src="../static/images/budget.png" alt="">
+                    <div class="column_align">
+                        <span class="projectHeader">
+                            Budget:
+                        </span>
+                        <span class="projectText">
+                            $1999
+                        </span>
+                    </div>
+                </div>
+        </div>
+        <div class="client_project_main_info_column">
+            <div class="client_project_main_info">
+
+                ℹ️ Project Info
+                  
+            </div>
+            <div class="client_project_main_info_buttons">
+                <label class="checkbox-container">Terms & Conditions*
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <button class="icon-button">
+                    <img src="../static/images/upload.png" alt="Icon">
+                  </button>
+
+                  <button class="prepayment_button">
+                    Prepayment
+                  </button>
+
+                  <div class="assignPost">
+                      <button class="client_assign">
+                        Assign
+                      </button>
+                      <button class="client_post">
+                        Post
+                      </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

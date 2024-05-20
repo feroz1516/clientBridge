@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" id="bootstrap-css">
+    <!-- <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css'> -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- <script src='https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script> -->
+
+    <title>Document</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="{{ url_for('static', filename = 'js/login_signup.js')}}">
+    </script>
+    <script src="https://kit.fontawesome.com/915a9b21cf.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename = 'js/home_page.js')}}">
+    
+    </script>
+</body>
+</html>

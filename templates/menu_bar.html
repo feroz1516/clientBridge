@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block head %} {{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/menu_bar.css') }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+
+{% endblock %}
+
+{% block content %}
+<div class="sidebar">
+    <div class="profile">
+        <img src="../static/images/profie_img.png" alt="Profile Picture">
+        <div class="profile-info">
+            <h3>Mohammed Feroz</h3>
+            <p>feroz1522krish@gmail.com</p>
+        </div>
+        <button class="edit-profile">Edit <i class="fa-solid fa-pen"></i> </button>
+    </div>
+    <ul class="menu">
+        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-chart-line"></i> Project Status</a></li>
+        <li><a href="#"><i class="fas fa-file-invoice-dollar"></i> Payment & Invoices</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-address-card"></i> Contact Us</a></li>
+        <li><a href="#"><i class="fas fa-code-branch"></i> Version</a></li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profile_type.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="profile_container">
+    
+    <div class="profile_section">
+        <img src="../static/images/profile_type_profile_user.png" alt="">
+        <h5>Choose your profile type</h5>
+        <div class="profile_type_buttons">
+            <button>Hire a team</button>
+            <button>Company Profile</button>
+            <button>Freelancer</button>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

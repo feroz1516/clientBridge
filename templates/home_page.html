@@ -1,0 +1,198 @@
+{% extends 'base.html' %} {% block head %} {{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home_page.css') }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+{% endblock %} {% block content %}
+
+<div class="home_page">
+  <nav class="navbar">
+    <div class="navbar-left">
+      <div class="menu-icon">
+        <img src="../static/images/home_page_list.png" alt="" />
+      </div>
+    </div>
+    <div class="logo">HOME</div>
+    <div class="navbar-right">
+      <div class="search-icon">
+        <img src="../static/images/home_page_search.png" alt="" />
+      </div>
+      <div class="message-icon">
+        <img src="../static/images/home_page_chat.png" alt="" />
+      </div>
+    </div>
+  </nav>
+  <div class="search_bar">
+    <div class="col-md-6">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control input-text" placeholder="Search products...."
+          aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          <button class="search_button btn btn-outline-warning btn-lg" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="selection_button">
+      <button>Company</button>
+      <span></span>
+      <button>Freelancer</button>
+    </div>
+
+  <div class="holder">
+    <div class="scrollable-cards">
+      <div class="card">
+        <div class="card_img_holder"></div>
+
+        <div class="card_info">
+          <div class="icon-text company_name">
+            <img src="../static/images/office-building.png" alt="Icon 1" />
+            <span >Zoho Corp Pvt LTD</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/settings.png" alt="Icon 2" />
+            <span>Software Service</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/location (2).png" alt="Icon 3" />
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="card_buttons">
+          <button>Hire</button>
+          <button>More Info</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img_holder"></div>
+
+        <div class="card_info">
+          <div class="icon-text company_name">
+            <img src="../static/images/office-building.png" alt="Icon 1" />
+            <span >Zoho Corp Pvt LTD</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/settings.png" alt="Icon 2" />
+            <span>Software Service</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/location (2).png" alt="Icon 3" />
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="card_buttons">
+          <button>Hire</button>
+          <button>More Info</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img_holder"></div>
+
+        <div class="card_info">
+          <div class="icon-text company_name">
+            <img src="../static/images/office-building.png" alt="Icon 1" />
+            <span >Zoho Corp Pvt LTD</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/settings.png" alt="Icon 2" />
+            <span>Software Service</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/location (2).png" alt="Icon 3" />
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="card_buttons">
+          <button>Hire</button>
+          <button>More Info</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img_holder"></div>
+
+        <div class="card_info">
+          <div class="icon-text company_name">
+            <img src="../static/images/office-building.png" alt="Icon 1" />
+            <span >Zoho Corp Pvt LTD</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/settings.png" alt="Icon 2" />
+            <span>Software Service</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/location (2).png" alt="Icon 3" />
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="card_buttons">
+          <button>Hire</button>
+          <button>More Info</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img_holder"></div>
+
+        <div class="card_info">
+          <div class="icon-text company_name">
+            <img src="../static/images/office-building.png" alt="Icon 1" />
+            <span >Zoho Corp Pvt LTD</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/settings.png" alt="Icon 2" />
+            <span>Software Service</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/location (2).png" alt="Icon 3" />
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="card_buttons">
+          <button>Hire</button>
+          <button>More Info</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img_holder"></div>
+
+        <div class="card_info">
+          <div class="icon-text company_name">
+            <img src="../static/images/office-building.png" alt="Icon 1" />
+            <span >Zoho Corp Pvt LTD</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/settings.png" alt="Icon 2" />
+            <span>Software Service</span>
+          </div>
+          <div class="icon-text">
+            <img src="../static/images/location (2).png" alt="Icon 3" />
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="card_buttons">
+          <button>Hire</button>
+          <button>More Info</button>
+
+        </div>
+      </div>
+    
+
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</div>
+
+{% endblock %}

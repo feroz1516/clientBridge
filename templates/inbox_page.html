@@ -1,0 +1,108 @@
+{% extends 'base.html' %} {% block head %} {{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inbox_page.css') }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="inbox_section">
+    <div class="navbar">
+        <h1 class="navbar-title">Inbox</h1>
+    </div>
+    <div class="inbox_row">
+
+        <section class="discussions">
+            <div class="discussion search">
+                <div class="searchbar">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="Search..."></input>
+                </div>
+            </div>
+            <div class="discussion ">
+                <div class="photo"
+                    style="background-image: url(https://cdn-icons-png.flaticon.com/512/3135/3135715.png);">
+                    <div class="online"></div>
+                </div>
+                <div class="desc-contact">
+                    <p class="name">Mohammed Feroz</p>
+                    <p class="message">Complete this project within July 15 !</p>
+                </div>
+                <div class="timer">12 sec</div>
+            </div>
+
+            <div class="discussion message-active">
+                <div class="photo"
+                    style="background-image: url(https://cdn-icons-png.flaticon.com/256/4140/4140037.png);">
+                    <div class="online"></div>
+                </div>
+                <div class="desc-contact">
+                    <p class="name">Feron Arockiam</p>
+                    <p class="message">Can We schedule a meeting?</p>
+                </div>
+                <div class="timer">3 min</div>
+            </div>
+
+
+        </section>
+        <section class="chat">
+            <div class="header-chat">
+                <i class="icon fa fa-user-o" aria-hidden="true"></i>
+                <p class="name">Feron Arockiam</p>
+                <i class="icon clickable fa fa-ellipsis-h right" aria-hidden="true"></i>
+            </div>
+            <div class="messages-chat">
+                <div class="message">
+                    <div class="photo">
+                        <img src="https://cdn-icons-png.flaticon.com/256/4140/4140037.png" alt="Profile Photo" class="image">
+                        <div class="online"></div>
+                    </div>
+                    
+                    <p class="text"> Hi Rahul, I hope you're doing well.</p>
+                </div>
+                <div class="message text-only">
+                    <p class="text"> I wanted to discuss the progress of the project we assigned to you.</p>
+                </div>
+                <p class="time"> 14h58</p>
+                <div class="message text-only">
+                    <div class="response">
+                        <p class="text"> Hello Feron Arockiam, I'm doing well, thank you</p>
+                    </div>
+                </div>
+                <div class="message text-only">
+                    <div class="response">
+                        <p class="text"> I've been working diligently on the project, and I'm excited to update you on
+                            our progress.</p>
+                    </div>
+                </div>
+                <p class="response-time time"> 15h04</p>
+                <div class="message">
+                    <div class="photo">
+                        <img src="https://cdn-icons-png.flaticon.com/256/4140/4140037.png" alt="Profile Photo" class="image">
+                        <div class="online"></div>
+                    </div>
+                    
+                    <p class="text"> That's great to hear! How is the development coming along?</p>
+                </div>
+                <p class="time"> 15h09</p>
+            </div>
+            <div class="footer-chat">
+                <i class="icon fa fa-smile-o clickable" style="font-size:25pt;" aria-hidden="true"></i>
+                <!-- <input type="text" placeholder=""></input> -->
+                <textarea  class="write-message" placeholder="Type your message here"></textarea>
+
+                <!-- <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></i> -->
+                <img src="" alt="">
+                <button class="circle-btn">
+                    <img src="../static/images/paper-plane.png" alt="Icon">
+                </button>
+            </div>
+        </section>
+    </div>
+</div>
+
+{% endblock %}
